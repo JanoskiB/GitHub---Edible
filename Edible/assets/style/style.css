@@ -1,0 +1,109 @@
+:root {
+--olive: #6a7152;
+--honeydew: #ebf5df;
+--eggplant: #694f5d;
+--sunray: #edb458;
+}
+
+body {
+    margin:0;
+}
+.hero {
+    background: honeydew;
+    background: linear-gradient(0deg, honeydew 57%, rgba(237,180,88,1) 99%);
+    width: 100vw;
+    height: 100vh;
+}
+
+
+.logo{
+    text-decoration: none;
+    font-size: 2rem;
+    padding-left: 100px;
+    font-weight: 700;
+    }
+
+.logo:visited{
+    color: #694f5d;
+}
+
+.navdiv{
+    display: flex;
+    float: right;
+    padding-top: 20px;
+    padding-right: 300px;
+}
+
+nav>div>ul>li{
+list-style: none;
+display: inline;
+margin: 40px;
+}
+
+nav>div>ul>li>a{
+color:#ebf5df;
+font-size: 1.3rem;
+text-decoration: none;
+}
+
+nav>div>ul>li>a:hover{
+    color:#694f5d;
+    text-decoration: underline;
+}
+
+.addarecipe-btn{
+    width: 190px;
+    margin-top: 10px;
+    height: 40px;
+    background-color: #ebf5df;
+    color: #694f5d;
+    border-radius: 15px;
+    border: #ebf5df;
+    font-size: 1rem;
+    font-weight: 700;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    box-shadow: 1px 1px black;
+
+}
+
+.addarecipe-btn:hover{
+    cursor: pointer;
+    font-size: 1.1rem;
+    box-shadow: 2px 2px black;
+
+}
+
+
+.hero-text{
+    margin-top: 100px;
+    margin-left: 100px;
+    color: #694f5d;
+}
+
+.random-btn{
+    width: 250px;
+    height: 30px;
+    font-size: 0.8rem;
+    background-color: #edb458;
+    color: #ebf5df;
+    border: none;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    font-weight: 700;
+    box-shadow: 1px 1px black;
+
+}
+
+.random-btn:hover{
+    box-shadow: 2px 2px black;
+    font-size: 0.85rem;
+    cursor:pointer;
+
+
+}
