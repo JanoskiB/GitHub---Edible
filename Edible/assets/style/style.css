@@ -5,9 +5,19 @@
 --sunray: #edb458;
 }
 
+@font-face {
+    font-family: 'mulishblack';
+    src: url('mulish-black-webfont.woff2') format('woff2'),
+         url('mulish-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 body {
     margin:0;
 }
+
 .hero {
     background: honeydew;
     background: linear-gradient(0deg, honeydew 57%, rgba(237,180,88,1) 99%);
@@ -18,8 +28,10 @@ body {
 
 .logo{
     text-decoration: none;
+    position: relative;
+    top: 25px;
     font-size: 2rem;
-    padding-left: 100px;
+    padding-left: 200px;
     font-weight: 700;
     }
 
@@ -32,6 +44,8 @@ body {
     float: right;
     padding-top: 20px;
     padding-right: 300px;
+    font-family: 'mulishblack';
+    font-weight: 700;
 }
 
 nav>div>ul>li{
@@ -52,9 +66,9 @@ nav>div>ul>li>a:hover{
 }
 
 .addarecipe-btn{
-    width: 190px;
-    margin-top: 10px;
-    height: 40px;
+    width: 205px;
+    margin-top: 5px;
+    height: 43px;
     background-color: #ebf5df;
     color: #694f5d;
     border-radius: 15px;
@@ -65,28 +79,35 @@ nav>div>ul>li>a:hover{
     -moz-border-radius: 15px;
     -ms-border-radius: 15px;
     -o-border-radius: 15px;
-    box-shadow: 1px 1px black;
-
 }
 
 .addarecipe-btn:hover{
     cursor: pointer;
-    font-size: 1.1rem;
-    box-shadow: 2px 2px black;
 
 }
 
+.hero-div{
+    display: flex;
+    width: 100vw;
+}
+
+.hero-images{
+    display: flex;
+    width: 50vw;
+}
 
 .hero-text{
     margin-top: 100px;
-    margin-left: 100px;
+    margin-left: 200px;
     color: #694f5d;
+    width: 50vw;
+
 }
 
 .random-btn{
     width: 250px;
-    height: 30px;
-    font-size: 0.8rem;
+    height: 43px;
+    font-size: 1rem;
     background-color: #edb458;
     color: #ebf5df;
     border: none;
@@ -96,14 +117,79 @@ nav>div>ul>li>a:hover{
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
     font-weight: 700;
-    box-shadow: 1px 1px black;
 
 }
 
 .random-btn:hover{
-    box-shadow: 2px 2px black;
-    font-size: 0.85rem;
     cursor:pointer;
+}
 
+#heroimage1{
+    position: relative;
+    left: 100px;
+    transform: rotate(-60deg);
+    -webkit-transform: rotate(-60deg);
+    -moz-transform: rotate(-60deg);
+    -ms-transform: rotate(-60deg);
+    -o-transform: rotate(-60deg);
+    left: 150px;
+    top: -50px;
 
+}
+
+#heroimage2{
+    width: 300px;
+    height: 240px;
+    position: relative;
+    float: right;
+    right: 500px;
+}
+
+#heroimage3{
+    width: 350px;
+    height: 350px;
+    position: relative;
+    right: 800px;
+    top: 200px;
+}
+
+h1{
+    font-size: 2.5rem;
+}
+
+h3{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.easter-div{
+    background: rgb(237,180,88);
+    background: linear-gradient(0deg, rgba(237,180,88,1) 10%, #f1fff0 57%);
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+}
+
+.easter-btn{
+    width: 300px;
+    margin-top: 5px;
+    height: 43px;
+    background-color: var(--olive);
+    color: var(--honeydew);
+    border-radius: 15px;
+    border: #ebf5df;
+    font-size: 1rem;
+    font-weight: 700;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+.easter-btn:hover{
+    cursor: pointer;
+}
+
+h2{
+    margin-left: 200px;
 }
