@@ -31,7 +31,7 @@ body {
     position: relative;
     top: 25px;
     font-size: 2rem;
-    padding-left: 200px;
+    padding-left: 150px;
     font-weight: 700;
     }
 
@@ -98,7 +98,7 @@ nav>div>ul>li>a:hover{
 
 .hero-text{
     margin-top: 100px;
-    margin-left: 200px;
+    margin-left: 150px;
     color: #694f5d;
     width: 50vw;
 
@@ -157,23 +157,34 @@ h1{
     font-size: 2.5rem;
 }
 
+h2{
+    margin-left: 150px;
+}
+
 h3{
     font-size: 1.5rem;
     font-weight: 600;
+
+}
+
+h4{
+    margin-left: 150px;
 }
 
 .easter-div{
-    background: rgb(237,180,88);
-    background: linear-gradient(0deg, rgba(237,180,88,1) 10%, #f1fff0 57%);
-    height: 80vh;
+    background: #f1fff0;
+    height: 20vh;
     width: 100vw;
-    display: flex;
+    display: inline-block;
 }
 
 .easter-btn{
-    width: 300px;
-    margin-top: 5px;
+    position: relative;
+    float: right;
+    top: -60px;
+    right: 50px;
     height: 43px;
+    width: 350px;
     background-color: var(--olive);
     color: var(--honeydew);
     border-radius: 15px;
@@ -190,6 +201,124 @@ h3{
     cursor: pointer;
 }
 
-h2{
-    margin-left: 200px;
+.easter-grid-container {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3rem 1rem;
+  }
+
+.space-section{
+    padding-left: 150px;
+    margin-right: 0;
+    height: 60vh;
+    background: rgb(237,180,88);
+    background: linear-gradient(0deg, rgba(237,180,88,1) 0%, #f1fff0 59%);
+}
+
+article>a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+}
+
+article>p{
+    font-size: 1.3rem;
+}
+
+.rotd-div{
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr;
+}
+
+.padding{
+    padding-left: 150px;
+}
+
+.rotd-btn{
+    position: relative;
+    left: 150px;
+    top: 30px;
+}
+
+.rotd-left{
+    background-color: #ebf5df;
+}
+
+.rotd-left>h2{
+    margin-top: 100px;
+    font-size: 2rem;
+}
+
+.rotd-left>h4{
+    margin-top: 50px;
+    font-size: 1.3rem;
+}
+
+.rotd-left>p{
+    margin-top: 20px;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+#clock{
+    position: relative;
+    top: 20px;
+}
+
+#bowl{
+    position: relative;
+    top: 20px;
+    left: 30px;
+}
+
+.rotd-btn{
+    width: 250px;
+    height: 43px;
+    font-size: 1rem;
+    background-color: #edb458;
+    color: #ebf5df;
+    border: none;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    font-weight: 700;
+
+}
+
+.rotd-btn{
+    cursor:pointer;
+}
+
+.article-div{
+    background: #edb458;
+    height: 20vh;
+    width: 100vw;
+    display: inline-block;
+}
+
+.article-div>h2{
+    margin-top: 50px;
+}
+
+.article-div>button{
+    margin-top: 50px;
+}
+
+.article-section{
+    padding-left: 150px;
+    margin-right: 0;
+    height: 60vh;
+    background: rgb(237,180,88);
+background: linear-gradient(180deg, rgba(237,180,88,1) 0%, rgba(235,245,223,1) 59%);
+}
+
+.newsletter-div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    background-color: #ebf5df;
 }
