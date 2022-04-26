@@ -257,7 +257,7 @@ article>p{
 }
 
 .rotd-left>h2{
-    margin-top: 100px;
+    margin-top: 60px;
     font-size: 2rem;
 }
 
@@ -631,6 +631,14 @@ input[type=checkbox]
 #cat4{grid-area: cat4; }
 #cat5{grid-area: cat5; }
 #cat6{grid-area: cat6; }
+
+#recipesOnpage{
+    color: var(--eggplant);
+}
+
+#articlesOnpage{
+    color: var(--eggplant);
+}
 
 
 
