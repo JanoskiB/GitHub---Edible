@@ -7,11 +7,16 @@
 
 @font-face {
     font-family: 'mulishblack';
-    src: url('mulish-black-webfont.woff2') format('woff2'),
-         url('mulish-black-webfont.woff') format('woff');
+    src: url(../fonts/mulish/Mulish-Black.ttf) format('truetype');
     font-weight: normal;
     font-style: normal;
+}
 
+@font-face {
+    font-family: 'brightmelody';
+    src: url(../fonts/bright-melody/brightmelodypersonaluseonly-ovogd.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 body {
@@ -39,6 +44,7 @@ main{
     text-decoration: none;
     position: relative;
     top: 25px;
+    font-family: 'brightmelody';
     font-size: 2rem;
     padding-left: 150px;
     font-weight: 700;
