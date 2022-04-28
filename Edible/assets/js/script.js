@@ -7,7 +7,6 @@ fetch('https://baljan.dk/wp-json/wp/v2/posts')
 console.log(data);
 myH1 = document.querySelector('#message');
 myH1.innerHTML = `Post id: ${data[0].id}, Title: ${data[0].title.rendered}`;
- title.rendered;
 });
 
 let token;
