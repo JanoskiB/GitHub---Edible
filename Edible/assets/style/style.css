@@ -327,7 +327,7 @@ article>p {
 .rotd-left>p {
     margin-top: 20px;
     font-size: 1.2rem;
-    font-weight: 500;
+    font-weight: 300;
 }
 
 #clock {
@@ -411,6 +411,7 @@ article>a:hover {
 .newsletter-left>p {
     width: 400px;
     font-size: 1.2rem;
+    font-weight: 300;
 }
 
 .newsletter-form {
@@ -480,6 +481,7 @@ input[type=checkbox] {
     grid-template-rows: auto;
     grid-template-columns: 1fr 1fr;
     background-color: #edb458;
+    font-weight: 300;
 }
 
 .ar-left {
@@ -560,6 +562,7 @@ input[type=checkbox] {
 }
 
 .footer-col ul li a {
+    font-weight: 200;
     font-size: 1.2rem;
     color: var(--honeydew);
     text-decoration: none;
