@@ -740,6 +740,24 @@ width: 450px;
 }
 
 
+/* SINGLE RECIPE PAGE */
 
+.prepsteps{
+    font-weight: 100;
+    padding-left: 180px;
+}
+
+.print-btn{
+    width: 180px;
+}
+
+.h3-description{
+    margin-top: 80px;
+}
+
+.p-description{
+    font-weight: 300;
+    width: 35vw;
+}
 
 
