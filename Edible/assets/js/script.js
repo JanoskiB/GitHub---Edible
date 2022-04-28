@@ -35,8 +35,26 @@ fetch('https://baljan.dk/wp-json/jwt-auth/v1/token', {
             .then(response => response.json())
             .then(data2 => {
                 console.log(data2);
-                myH2 = document.querySelector('#privateMessage');
-                myH2.innerHTML = `Post id: ${data2[5].id}, Title: ${data2[5].title.rendered}, ${data2[5].acf.about}`;
+                myRecipeName = document.querySelector('#recipeName');
+                myRecipeName.innerHTML = `${data2[8].acf.name}`;
+
+                myPreptime = document.querySelector(`#Preptime`);
+                myPreptime.innerHTML = `${data2[8].acf.total_preparation_time}`;
+
+                myServingsNumber = document.querySelector(`#servingsNumber`);
+                myServingsNumber.innerHTML = `${data2[8].acf.servings + ' ' + '' + ''}`;
+
+                myIngredients = document.querySelector(`#ingredients`);
+                myIngredients.innerHTML = `${data2[8].acf.ingredients}`;
+
+                mySteps = document.querySelector(`#Steps`);
+                mySteps.innerHTML = `${data2[8].acf.preparation}`;
+
+                myDescription = document.querySelector(`#RecipeDesc`);
+                myDescription.innerHTML = `${data2[8].acf.about}`;
+
+               
+                
             });
     })
 

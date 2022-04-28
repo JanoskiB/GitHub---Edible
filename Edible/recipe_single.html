@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/style/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="assets/js/script.js" defer></script>
     <title>Recipe</title>
 </head>
 
@@ -28,43 +29,29 @@
     </div>
     <div class="rotd-div">
         <div class="rotd-left olive">
-            <h2>Recipe name goes here</h2>
+            <h2 id="recipeName"></h2>
             <div class="rotd-icons padding">
-                <img src="assets/icons/clock-sunray.svg" id="clock" style="width: 50px;" alt=""> &nbsp;40 min <img
-                    src="assets/icons/bowl-sunray.png" id="bowl" style="width: 50px;" alt="">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3-4
+                <img src="assets/icons/clock-sunray.svg" id="clock" style="width: 50px;" alt=""><span id="Preptime"></span><img src="assets/icons/bowl-sunray.png" id="bowl" style="width: 50px;" alt="">
+               <span id="servingsNumber"></span>
             </div>
-            <div class="padding">
-                <h3>Ingredients</h3>
-                <ul>
-                    <li>Ingredient</li>
-                    <li>Ingredient</li>
-                    <li>Ingredient</li>
-                    <li>Ingredient</li>
-                    <li>Ingredient</li>
-                </ul>
-            </div>
-            <form method="get" action="#">
+            <form method="get" action="#ingredients">
                 <button class="rotd-btn" type="submit">Read more</button>
             </form>
         </div>
         <div lass="rotd-right">
-            <img src="https://cf.foodista.com/content/fp/ocpnkf6csdbc43wt.jpg" style="width: 50vw"
-                alt="">
+            <img src="https://cf.foodista.com/content/fp/ocpnkf6csdbc43wt.jpg" style="width: 50vw" alt="">
         </div>
     </div>
     <main>
+        <div class="padding">
+            <h3 class="weight">Ingredients</h3>
+                <p id="ingredients"></p>
+        </div>
         <div>
-            <h3 class="padding">
+            <h3 class="padding weight">
                 Preparation step by step
             </h3>
-            <ul class="prepsteps padding">
-                <li>Step 1</li>
-                <li>Step 2</li>
-                <li>Step 3</li>
-                <li>Step 4</li>
-                <li>Step 5</li>
-            </ul>
+            <p id="Steps" class="prepsteps"></p>
         </div>
         <form method="get" action="#">
             <button class="rotd-btn print-btn" type="submit">Print this recipe</button>
@@ -72,12 +59,7 @@
         <h3 class="h3-description padding">
             Description
         </h3>
-        <p class="p-description padding">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque cumque omnis iusto accusantium assumenda id laudantium dicta quia repudiandae, inventore dolorem ex perferendis blanditiis voluptatibus tempore, eveniet nobis recusandae animi!
-        Cumque explicabo, debitis quos ad dicta eaque libero? Aspernatur facere tenetur excepturi cumque ut, laboriosam aperiam. Voluptatum voluptates nobis accusamus sapiente, dolor facilis iure, quas aut quasi, nulla sed libero?
-        Eius fugiat, dolor cumque molestiae veritatis labore, minima enim, dignissimos qui atque repudiandae voluptas laborum ab natus doloremque quos eveniet dolore harum! Suscipit amet, voluptatibus possimus aliquam laudantium officiis excepturi!
-        Sint impedit veritatis libero animi unde? Quaerat nulla consequatur exercitationem sed officiis accusamus veniam reiciendis nemo aperiam, eum placeat commodi esse perspiciatis delectus quis autem assumenda voluptatum rem rerum saepe.
-        Voluptates, id autem? Quaerat, culpa rem. Totam reiciendis, earum natus vel excepturi rerum error cupiditate recusandae, eaque, velit nobis! Labore quae eveniet velit et culpa cumque, eius voluptatum! Distinctio, officia.
-        </p>
+        <p id="RecipeDesc" class="p-description padding"></p>
         <img class="padding" src="https://cf.foodista.com/content/fp/ocpnkf6csdbc43wt.jpg" alt="">
     </main>
     <footer>

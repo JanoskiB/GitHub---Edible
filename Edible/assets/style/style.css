@@ -771,7 +771,7 @@ input[type=checkbox] {
 
 .prepsteps{
     font-weight: 100;
-    padding-left: 180px;
+    padding-left: 150px;
 }
 
 .print-btn{
@@ -784,6 +784,28 @@ input[type=checkbox] {
 
 .p-description{
     font-weight: 300;
+    width: 35vw;
+}
+
+#Preptime{
+   padding-left: 10px;
+}
+
+#servingsNumber{
+    padding-left: 35px;
+}
+
+#ingredients{
+    white-space: pre;
+    font-weight: 100;
+}
+
+.weight{
+    font-weight: 600;
+}
+
+#Steps{
+    white-space: pre-wrap;
     width: 35vw;
 }
 
