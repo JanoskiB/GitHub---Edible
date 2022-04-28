@@ -53,8 +53,8 @@ fetch('https://baljan.dk/wp-json/jwt-auth/v1/token', {
                 myDescription = document.querySelector(`#RecipeDesc`);
                 myDescription.innerHTML = `${data2[8].acf.about}`;
 
-               
-                
+                myImage = document.querySelector(`#recipe-img`);
+                myImage.innerHTML = `<img src="${data2[8].acf.image_url}">`;
             });
     })
 
