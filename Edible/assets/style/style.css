@@ -99,6 +99,16 @@ main {
     font-family: 'mulishblack';
 }
 
+.navdiv1 {
+    display: flex;
+    float: right;
+    padding-top: 20px;
+    margin-right: 200px;
+    padding-right: 0;
+    font-weight: 700;
+    font-family: 'mulishblack';
+}
+
 nav>div>ul>li {
     list-style: none;
     display: inline;
@@ -815,5 +825,7 @@ input[type=checkbox] {
 .img-rc{
     height: 820px;
     width: 100vw;
+    padding: 0;
+    margin: 0;
 }
 
