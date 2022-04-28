@@ -13,6 +13,13 @@
 }
 
 @font-face {
+    font-family: 'mulishregular';
+    src: url(../fonts/mulish/Mulish-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'brightmelody';
     src: url(../fonts/bright-melody/brightmelodypersonaluseonly-ovogd.otf) format('opentype');
     font-weight: normal;
@@ -23,8 +30,10 @@ body {
     margin:0;
     padding:0;
     width: 100vw;
-    background-color: var(--olive);
+    background-color: var(--honeydew);
     color: var(--eggplant);
+    font-family: 'mulishregular';
+
 }
 
 main{
@@ -163,38 +172,41 @@ nav>div>ul>li>a:hover{
     -moz-transform: rotate(-60deg);
     -ms-transform: rotate(-60deg);
     -o-transform: rotate(-60deg);
-    left: 150px;
+    left: 200px;
     top: -50px;
 
 }
 
 #heroimage2{
-    width: 300px;
-    height: 240px;
+    width: 243px;
+    height: 195px;
     position: relative;
     float: right;
-    right: 500px;
+    right: 400px;
 }
 
 #heroimage3{
     width: 350px;
     height: 350px;
     position: relative;
-    right: 800px;
+    right: 700px;
     top: 200px;
 }
 
 h1{
-    font-size: 2.5rem;
+    font-size: 2rem;
+    font-family: 'brightmelody';
 }
 
 h2{
     margin-left: 150px;
+    font-family: 'brightmelody';
+
 }
 
 h3{
-    font-size: 1.5rem;
-    font-weight: 600;
+    font-size: 1.3rem;
+    font-weight: 100;
 
 }
 
@@ -213,9 +225,9 @@ h4{
     position: relative;
     float: right;
     top: -60px;
-    right: 50px;
+    right: 150px;
     height: 43px;
-    width: 350px;
+    width: 300px;
     background-color: var(--olive);
     color: var(--honeydew);
     border-radius: 15px;
@@ -230,13 +242,15 @@ h4{
 
 .easter-btn:hover{
     cursor: pointer;
+    border: solid 2px var(--honeydew);
 }
 
 .easter-grid-container {
     display: grid;
     grid-template-rows: auto auto;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 3rem 1rem;
+    gap: 0;
+    padding-right: 100px;
   }
 
 .space-section{
@@ -255,7 +269,7 @@ article>a{
 }
 
 article>p{
-    font-size: 1.3rem;
+    font-size: 1rem;
 }
 
 .rotd-div{
@@ -266,12 +280,6 @@ article>p{
 
 .padding{
     padding-left: 150px;
-}
-
-.rotd-btn{
-    position: relative;
-    left: 150px;
-    top: 30px;
 }
 
 .rotd-left{
@@ -318,11 +326,16 @@ article>p{
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
     font-weight: 700;
+    position: relative;
+    left: 150px;
+    top: 30px;
+    cursor:pointer;
+
 
 }
 
-.rotd-btn{
-    cursor:pointer;
+.rotd-btn:hover{
+    border: solid 2px var(--honeydew);
 }
 
 .article-div{
@@ -330,6 +343,15 @@ article>p{
     height: 20vh;
     width: 100%;
     display: inline-block;
+}
+
+article>a{
+    text-decoration: none;
+    color: #694f5d;
+}
+
+article>a:hover{
+    text-decoration: underline var(--sunray);
 }
 
 .article-div>h2{
@@ -344,9 +366,8 @@ article>p{
     padding-left: 150px;
     margin-right: 0;
     height: 60vh;
-
     background: rgb(237,180,88);
-background: linear-gradient(180deg, rgba(237,180,88,1) 0%, rgba(235,245,223,1) 59%);
+    background: linear-gradient(180deg, rgba(237,180,88,1) 0%, rgba(235,245,223,1) 59%);
 }
 
 .newsletter-div{
@@ -402,7 +423,7 @@ input[type=submit]{
 
 input[type=submit]:hover{
     cursor: pointer;
-    background-color: #bb8b3e;
+    border: 2px solid var(--honeydew);
 }
 
   input[type=checkbox]{
@@ -413,6 +434,17 @@ input[type=submit]:hover{
       display: block;
       width: 500px;
   }
+
+.vidHeader{
+    margin-top: 100px;
+}
+
+.videoDiv{
+    background-color: #ebf5df;
+    padding-left: 150px;
+    margin-right: 0;
+    height: 60vh;
+}
 
   .addrecipe-div{
     height: 80vh;
@@ -522,7 +554,10 @@ input[type=submit]:hover{
 #footerbtn{
     position: relative;
     left: 0px;
+}
 
+#footerbtn:hover{
+    border: solid 2px var(--honeydew);
 }
 
 /* RECIPE PAGE */
