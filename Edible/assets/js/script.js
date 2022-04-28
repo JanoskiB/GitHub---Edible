@@ -1,6 +1,3 @@
-
-
-
 fetch('https://baljan.dk/wp-json/wp/v2/posts')
     .then(response => response.json())
     .then(data => {
@@ -39,10 +36,10 @@ fetch('https://baljan.dk/wp-json/jwt-auth/v1/token', {
                 myRecipeName.innerHTML = `${data2[8].acf.name}`;
 
                 myPreptime = document.querySelector(`#Preptime`);
-                myPreptime.innerHTML = `${data2[8].acf.total_preparation_time}`;
+                myPreptime.innerHTML = `${data2[8].acf.total_preparation_time + " min"}`;
 
                 myServingsNumber = document.querySelector(`#servingsNumber`);
-                myServingsNumber.innerHTML = `${data2[8].acf.servings + ' ' + '' + ''}`;
+                myServingsNumber.innerHTML = `${data2[8].acf.servings + ' ' + '' + 'servings'}`;
 
                 myIngredients = document.querySelector(`#ingredients`);
                 myIngredients.innerHTML = `${data2[8].acf.ingredients}`;
@@ -55,6 +52,18 @@ fetch('https://baljan.dk/wp-json/jwt-auth/v1/token', {
 
                 myImage = document.querySelector(`#recipe-img`);
                 myImage.innerHTML = `<img src="${data2[8].acf.image_url}">`;
+
+                myAuthor = document.querySelector(`#Author`);
+                myAuthor.innerHTML = `${data2[8].acf.author}`;
+
+                myBudget = document.querySelector(`#Budget`);
+                myBudget.innerHTML = `${data2[8].acf.budget_friendliness}`;
+
+                myDate = document.querySelector(`#Date`);
+                myDate.innerHTML = `${data2[8].acf.date}`;
+
+                myDifficulty = document.querySelector(`#Difficulty`);
+                myDifficulty.innerHTML = `${data2[8].acf.difficulty}`;
             });
     })
 

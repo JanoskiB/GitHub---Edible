@@ -766,13 +766,13 @@ input[type=checkbox] {
 
 #errorImage1 {
     position: relative;
-    right: 350px;
+    right: 250px;
     width: 450px;
 }
 
 #errorImage2 {
     position: relative;
-    right: 450px;
+    right: 350px;
     top: 200px;
 }
 
@@ -819,4 +819,13 @@ input[type=checkbox] {
     width: 35vw;
 }
 
+.singleRecipe-div {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+}
+
+.rotd-right{
+    background-color: #6a7152;
+}
 
