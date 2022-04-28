@@ -19,6 +19,7 @@ body {
     padding:0;
     width: 100vw;
     background-color: var(--olive);
+    color: var(--eggplant);
 }
 
 main{
@@ -38,22 +39,28 @@ main{
 .logo{
     text-decoration: none;
     position: relative;
-    top: 25px;
-    font-size: 2rem;
+    top: 20px;
+    color: #ebf5df;
+    font-size: 3rem;
     padding-left: 150px;
     font-weight: 700;
+    text-shadow: 2px 2px var(--eggplant);
     }
 
 .logo:visited{
+    color: var(--honeydew);
+}
+
+.logo:hover{
     color: #694f5d;
+    text-shadow: 0px 0px var(--eggplant);
 }
 
 .navdiv{
     display: flex;
     float: right;
     padding-top: 20px;
-    padding-right: 300px;
-    font-family: 'mulishblack';
+    padding-right: 200px;
     font-weight: 700;
 }
 
@@ -75,7 +82,7 @@ nav>div>ul>li>a:hover{
 }
 
 .addarecipe-btn{
-    width: 205px;
+    width: 160px;
     margin-top: 5px;
     height: 43px;
     background-color: #ebf5df;
@@ -92,6 +99,9 @@ nav>div>ul>li>a:hover{
 
 .addarecipe-btn:hover{
     cursor: pointer;
+    border:solid;
+    border-width: 2px;
+    border-color: #694f5d;
 
 }
 
@@ -131,6 +141,9 @@ nav>div>ul>li>a:hover{
 
 .random-btn:hover{
     cursor:pointer;
+    border:solid;
+    border-width: 2px;
+    border-color: #ebf5df;
 }
 
 #heroimage1{
@@ -409,7 +422,13 @@ input[type=submit]:hover{
     color:#ebf5df
 }
 
+.youtubeVid{
+    background-color: #ebf5df;
+    height: 100vh;
+}
 
+.youtubeInner{
+    float: left;}
 
 #footer-image{
     position: relative;
