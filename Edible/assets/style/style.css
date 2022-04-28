@@ -49,7 +49,7 @@ body {
     width: 100vw;
     background-color: var(--honeydew);
     color: var(--eggplant);
-    font-family: 'mulishregular';
+    font-family: 'mulishblack';
 
 }
 
@@ -199,7 +199,8 @@ nav>div>ul>li>a:hover{
     height: 195px;
     position: relative;
     float: right;
-    right: 400px;
+    right: 350px;
+    top: 50px;
 }
 
 #heroimage3{
@@ -559,10 +560,9 @@ input[type=submit]:hover{
  }
 
 .copyright{
-    font-size: 0.7rem;
+    font-size: 1rem;
     width: 100vw;
     height: 30px;
-    border-top: solid 1px white;
     text-align: center;
     padding-bottom: 3px;
     margin-top: 60px;
@@ -646,11 +646,15 @@ input[type=submit]:hover{
     opacity: 0.9;
 }
 
+.allCategories>div>img:hover + .bottom-left{
+  font-size: 2.2rem;
+}
+
 .bottom-left{
     position: relative;
     bottom: 60px;
     left: 16px;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 700;
     color: #ebf5df;
 }
@@ -719,6 +723,22 @@ input[type=checkbox]
 #articlesOnpage{
     color: var(--eggplant);
 }
+
+
+/* ERROR PAGE */
+
+#errorImage1{
+position: relative;
+right: 350px;
+width: 450px;
+}
+
+#errorImage2{
+    position: relative;
+    right: 450px;
+    top: 200px;
+}
+
 
 
 
