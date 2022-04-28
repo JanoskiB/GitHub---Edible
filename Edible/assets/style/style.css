@@ -13,6 +13,27 @@
 }
 
 @font-face {
+    font-family: 'mulishblack';
+    src: url(../fonts/mulish/Mulish-Bold.ttf) format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'mulishblack';
+    src: url(../fonts/mulish/Mulish-Italic.ttf) format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'mulishblack';
+    src: url(../fonts/mulish/Mulish-Light.ttf) format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'brightmelody';
     src: url(../fonts/bright-melody/brightmelodypersonaluseonly-ovogd.otf) format('opentype');
     font-weight: normal;
